@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fun-with-pandas"
+version = "0.1.0"
+description = ""
+authors = ["Maxwell Volz <maxwellvolz@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fun_with_pandas"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.2"
+numpy = "^1.24.1"
+matplotlib = "^3.6.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^23.1a1", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
